@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+*,
+*::before,/*가상요소들도 박스사이징을 보더사이즈로*/
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 2rem;
+  line-height: 1.6;
+  font-family: 'NanumBarunGothic', 'serif';
+}
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+/*
+h2::before{
+	content: "이모티콘";
+}   
+*/
+
+.header {
+	min-width:1040px;
+  background:#ff9e19;
+  height: 50px;
+  padding: 4px 0 4px;
+}
+.container {
+  max-width: 1250px;
+  background:#ff9e19;
+  margin: 0 auto;
+  padding: 2px 0 4px;
+  position: relative;
+}
+
+.containerT {
+  background:#ff9e19;
+  margin: 0 auto;
+  padding: 2px 0 4px;
+  position: relative;
+}
+.init {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
+.container-float1 {
+  max-width: 1810px;
+  background: white;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  border-left: 1px solid #a0a0a0;
+  border-right: 1px solid #a0a0a0;
+  height: 400px;
+}
+
+.container-float2 {
+  max-width: 1810px;
+  background: white;
+  padding: 0 20px;
+  position: relative;
+  border-left: 1px solid #a0a0a0;
+  border-right: 1px solid #a0a0a0;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.container-float {
+  max-width: 1810px;
+  background: white;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+  border-left: 1px solid #a0a0a0;
+  border-right: 1px solid #a0a0a0;
+}
+
+.container-float::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.container-float3 {
+  max-width: 1810px;
+  background: #a0a0a0;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+.cta{
+color: white;
+width: 300px;
+font-weight: 400;
+margin: 0 auto 60px;
+display: block; #a요소 이므로
+padding: 20px 50px;
+border-radius: 8px; #radius = 반경
+background black;
+} 
+.container-float3::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.inline-element {
+  width: 40px;
+}
+  .logo {
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+    margin: 5px 0 0;
+    padding-left: inherit;
+    position: absolute;
+    top: -7px;
+    left: 0;
+  }
+.logo1 {
+  display: block;
+  margin: 0px auto;
+  width: auto;
+  height: auto;
+  min-width: 680px;
+  min-height: 200px;
+}
+
+.logo2 {
+  display: block;
+  margin: 0px auto;
+  width: auto;
+  height: auto;
+  max-width: 2000px;
+  max-height: 2000px;
+  border-left: 2px solid #ff9e19;
+  border-right: 2px solid #ff9e19;
+  border-top: 2px solid #ff9e19;
+  border-bottom: 2px solid #ff9e19;
+}
+.nav {
+  text-align: center;
+}
+.list {
+  margin: 0;
+  font-size: 0;
+}
+.list-item {
+  font-weight: 700;
+  display: inline-block;
+  font-size: 2rem;
+}
+.list-item > a {
+  color: white;
+  display: block;
+  padding: 2px;
+}
+.list-item > a:hover {
+  color: #37a59a;
+}
+
+
+
+/* MAIN */
+.main {
+  padding: 0 20px;
+  background: #efefef;
+}
+
+.hero-section {
+  background: #efefef;
+  font-size: 5rem;
+  font-weight: 400;
+  margin: 0;
+}
+.blank{
+	height:200px;
+}
+.blanks{
+	height:55px;
+}
+
+
+.profile {
+  font-size: 3.6rem;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  background: #ff9e19;
+  margin: 0 490px;
+}
+
+.center {
+  display: table;
+}
+.center div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.root {
+  margin: auto;
+  width: 770px;
+}
+
+.name {
+  background: #ff9e19;
+  float: left;
+  width: 30%;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  height: 50px;
+  border-left: 2px solid #ff9e19;
+  border-right: 2px solid #ff9e19;
+  border-top: 0.5px solid white;
+  border-bottom: 0.5px solid white;
+}
+.nameh {;
+	display: block;
+font-size:4rem;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  height: 50px;
+}
+.name1 {
+  background: white;
+  float: left;
+  width: 70%;
+  text-align: center;
+  color: black;
+  height: 50px;
+  border-left: 2px solid #ff9e19;
+  border-right: 2px solid #ff9e19;
+  border-top: 0.5px solid #a0a0a0;
+  border-bottom: 0.5px solid #a0a0a0;
+}
+
+.Education {
+  background: #ff9e19;
+  float: left;
+  width: 30%;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  height: 140px;
+  padding: 300, auto;
+  border-left: 2px solid #ff9e19;
+  border-right: 2px solid #ff9e19;
+  border-top: 0.5px solid white;
+  border-bottom: 0.5px solid white;
+}
+
+.Education1 {
+  background: white;
+  float: left;
+  width: 70%;
+  text-align: center;
+  color: black;
+  height: 140px;
+  border-left: 2px solid #ff9e19;
+  border-right: 2px solid #ff9e19;
+  border-top: 0.5px solid #a0a0a0;
+  border-bottom: 0.5px solid #a0a0a0;
+}
+
+.travel{
+	background: white;
+	height: 1000px;
+}
+
+.center{
+text-align: center;
+}
